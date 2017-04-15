@@ -91,7 +91,6 @@ local function info_by_username(arg, data)
 		       text = text..'_Rank :_ *Group Owner*\n\n'
 		     elseif is_mod1(arg.chat_id, data.id_) then
 		       text = text..'_Rank :_ *Group Moderator*\n\n'
-		 else
 			elseif data.id_ == tonumber(iborn) then
 		       text = text..'`Rank :` *Developer*\n\n'
 		 else
