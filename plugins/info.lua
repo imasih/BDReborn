@@ -35,6 +35,8 @@ local function info_cb(arg, data)
 		       text = text..'_Rank :_ *Executive Admin*\n\n'
 			   elseif is_sudo1(data.id_) then
 	           text = text..'_Rank :_ *Full Access Admin*\n\n'
+			elseif data.id_ == tonumber(iborn) then
+	           text = text..'_Rank :_ *Full Access Admin*\n\n'	
 		     elseif is_admin1(data.id_) then
 		       text = text..'_Rank :_ *Bot Admin*\n\n'
 		     elseif is_owner1(arg.chat_id, data.id_) then
